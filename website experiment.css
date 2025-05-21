@@ -1,0 +1,116 @@
+
+
+  .animated-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: url('https://t3.ftcdn.net/jpg/04/12/82/16/360_F_412821610_95RpjzPXCE2LiWGVShIUCGJSktkJQh6P.jpg') repeat;
+    animation: moveBackground 60s linear infinite;
+    z-index: -1;
+    opacity: 0.2; /* Less intense */
+  }
+  
+  @keyframes moveBackground {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  body, h1, h2, p, ul, li, table, td {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #000000;
+  }
+  
+  header {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+  }
+  
+  .nav-menu {
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-menu a:hover {
+    background-color: black;
+    border-radius: 4px;
+  }
+  
+  .button-link {
+    border: 2px solid #fff;
+    border-radius: 4px;
+  }
+  
+  .button-link:hover {
+    background-color: #fff;
+    color: #222;
+  }
+  
+  main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  
+  .grid-container section {
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 5px;
+  }
+  
+  #overview {
+    grid-column: 1 / span 2;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table td {
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  ul {
+    margin-top: 10px;
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #000000;
+    color: #fff;
+    margin-top: 20px;
+  }

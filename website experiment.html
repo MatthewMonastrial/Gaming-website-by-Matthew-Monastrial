@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="website experiment.css">
+ <link rel="stylesheet" href="website experiment.js">
+  <title>My Game website</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #000000;
+      color: rgb(63, 26, 164);
+    }
+    header {
+      background: #000000;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+    }
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .game-card {
+      background: #2a2a2a;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .game-card img {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .game-card h3 {
+      margin-top: 10px;
+    }
+    .game-card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #28a745;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .game-card a:hover {
+      background: #218838;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000000;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Game website</h1>
+    <p>Welcome to the gaming zone of bl4ze!</p>
+    <img src="logo.png" alt="website logo" width="20%"> 
+  </header>
+  
+  <nav class="nav-menu">
+    <a href="#overview">Information</a>
+     <a href="experiment.html" target="_blank" class="button-link">Reviews</a>
+    <a href="game.html" target="_blank" class="button-link">game</a>
+  </nav>
+  <section class="portfolio">
+    <div class="game-card">
+      <img src="https://www.cbc.ca/kids/images/minijumper_thumb.jpeg" alt="Game 1 Screenshot">
+      <h3>Game</h3>
+      <p>Its a game that jumps thorugh blocks like the t-rex game.</p>
+      <a href="game.html" target="_blank" class="button-link">Play Now</a>
+    </div>
+  </section>
+
+  <div class="animated-background"></div>
+  <main>
+    <div class="grid-container">
+      <section id="overview">
+        <h2>Overview</h2>
+        <p>The t-rex game is the most common but most used and attracted game for kids and adults.</p>
+      
+      
+      
+      <section id="reviews">
+        <h2>Reviews</h2>
+        <p>"It's a challenge to beat your own score ." – GameStore</p>
+        <p>"A mix of strategy and skill." – IGN</p>
+        <p>"An exciting challenge for players." – PC Gamer</p>
+      </section>
+    </div>
+  </main>
+  
+  
+
+  <footer>
+    &copy; 2025 Matthew Monastrial | Game Developer
+  </footer>
+
+</body>
+</html>
